@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pt bậc 2</title>
+</head>
+<body>
+<script>
+
+    let a = parseInt(prompt('so1'));
+    let b = parseInt(prompt('so2'));
+    let c = parseInt(prompt('so3'));
+    let del=(b**2 - 4*a*c);
+    if(del <0) {
+        alert('pt vô nghiệm');
+    } else
+        if(del == 0) {
+        alert('pt có nghiệm kép x1=x2=((-b)/2a)');
+    } else
+        {
+       x1= ( b + Math.sqrt(del)) / (2*a);
+       x2= (-b - Math.sqrt(del)) / (2*a);
+       alert(x1,x2)
+
+    }
+</script>
+</body>
+</html>

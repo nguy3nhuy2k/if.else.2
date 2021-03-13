@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="a"/>
+    <input type="text" id="b"/>
+<select id="bt">
+    <option value="+">+</option>
+    <option value="-">_</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<button id="ketqua" onclick="pt()">kết quả</button>
+<p id="dtcl"></p>
+</body>
+</html>
+<script>
+    function pt() {
+    let so1=parseInt(document.getElementById("a").value);
+    let so2=parseInt(document.getElementById("b").value);
+    let pt=document.getElementById("bt").value;
+    let result;
+        if (pt=="+"){
+            result=so1+so2;
+        } else if(pt=="-"){
+            result=so1-so2;
+        } else if(pt=="*"){
+            result=so1*so2
+        } else {
+            result=so1/so2
+        }
+        document.getElementById("dtcl").innerText= result;
+
+    }
+</script>
